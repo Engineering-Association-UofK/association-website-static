@@ -1,64 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
   <body style="margin: 0; ">
-    <center style="background-color: ;">
-      <table  style="width: 100%; max-width: 600px; border-spacing: 0; background-color: rgb(245, 247, 250)">
+    <center style="background-color: #dfdcdc;">
+      <table  style="width: 100%; max-width: 600px; border-spacing: 0; background-color: rgb(245, 247, 250); padding: 12px;">
         <tr>
           <td style="height: 8px;background-color: white;padding: 0;"></td>
         </tr>
         <tr>
-          <td align="center" style="width: 600px; padding: 12px; background-color: rgb(0, 51, 102); text-align: center;">
-            <a href="https://association-website-frontend.vercel.app/" 
+          <td align="center" style="width: 600px; padding: 6px; background-color: rgb(0, 51, 102); text-align: center;">
+            <a href="https://sea.uofk.edu/" 
+              rel="noopener noreferrer"
               style="
               text-decoration: none;
               font-family: sans-serif;
               color: white;
-              font-size: 26px;
+              font-size: 22px;
               line-height: 32px;
               display: inline-block;
-              "><img src="https://raw.githubusercontent.com/Wesammoawia/html-email-images/main/email-images/favicon.ico" alt="LOGO" style="vertical-align: middle; border: 0; 
-              margin-right: 8px; width: 32; display: inline-block;"> Enginnering Assocciation</a>
+              "><img src="https://sea.uofk.edu/favicon-96x96.png" alt="LOGO" style="vertical-align: middle; border: 0; 
+              margin-right: 8px; width: 32; display: inline-block; width: 40px;"> Steering Engineering Association</a>
           </td>
         </tr>
         <tr>
-          <td style="padding: 0; font-size: 18px;">
-             <p>Dear {{Name}},</p>
-
+          <td style="padding: 8px 12px; font-size: 16px; line-height:1.6;">
             <p>
-            Congratulations! Your certificate for participating in <strong>Engineering Assocciation</strong> is now ready.
+              Dear <span th:text="${studentName}">[Name]</span>,
             </p>
 
             <p>
-            You can download your certificate by clicking the button below:
+              We are pleased to inform you that your certificate on <strong th:text="${eventName}">MatLap</strong> 
+              <strong th:text="${eventType}">Workshop</strong> issued by 
+              <strong>Steering Engineering Association</strong> is now available.
+            </p>
+
+            <p>
+              This certificate has been granted in recognition of your involvement and contribution.
+            </p>
+
+            <p>
+              You may view and download your certificate by clicking the button below:
             </p>
           </td>
         </tr>
         <tr>
         
           <td align="center">
-            <a href="#"
+            <a th:href="${certUrl}"
               style="
                 display: inline-block;
-                font-size: 22px;
+                font-size: 18px;
                 font-family: sans-serif;
-                background-color: rgb(75, 75, 255);
+                background-color: #0d6efd;
                 color: #ffffff;
                 text-decoration: none;
-                border-radius: 16px;
-                padding: 6px 16px;
-                border: none;
+                padding: 10px 20px;
               ">
-              Download
+              View Certificate
             </a>
           </td>
         </tr> 
         <tr>
-          <td>
+          <td  style="padding: 8px 12px">
             <p style="margin-top:20px; font-size: 18px;">
               If the button above does not work, copy and paste the following link into your browser:
             </p>
-             <a href="#" style="color:#CA3847; font-weight: 600; font-size: 18px;">
-              Certificate Link
+             <a th:href="${certUrl}" style="color:#7738ca; font-weight: 600; font-size: 18px;">
+              <span th:text="${certUrl}">[Certificate Link]</span>
               </a>
           </td>
         </tr>
@@ -72,18 +79,39 @@
           <td style="height: 20px; line-height: 20px; font-size: 20px;"></td>
         </tr>
         <tr>
-          <td class="socialLinks" style="
-        text-align: center; ">
-            <a href="#"><img src="https://raw.githubusercontent.com/Wesammoawia/html-email-images/main/email-images/black-facebook.png
-" width="30px"></a>
-            <a href="#"><img src="https://raw.githubusercontent.com/Wesammoawia/html-email-images/main/email-images/black-instagram.png" width="30px"></a>
-            <a href="#"><img src="https://raw.githubusercontent.com/Wesammoawia/html-email-images/main/email-images/black-linkedin.png" width="30px"></a>
-            <a href="#"><img src="https://raw.githubusercontent.com/Wesammoawia/html-email-images/main/email-images/black-twitter.png" width="30px"></a>
+          <td class="socialLinks" style="text-align: center;">
+            <a href="https://www.facebook.com/UofKHandasa/about/" target="_blank" rel="noopener noreferrer" style="margin:0 4px;">
+              <img src="https://raw.githubusercontent.com/Wesammoawia/html-email-images/main/email-images/black-facebook.png" 
+                  width="30" height="30" 
+                  alt="Facebook" 
+                  style="display:inline-block; border:0;">
+            </a>
+
+            <a href="https://x.com/UofK_Handasa" target="_blank" rel="noopener noreferrer" style="margin:0 4px;">
+              <img src="https://raw.githubusercontent.com/Wesammoawia/html-email-images/main/email-images/black-twitter.png" 
+                  width="30" height="30" 
+                  alt="X / Twitter" 
+                  style="display:inline-block; border:0;">
+            </a>
+
+            <a href="https://www.instagram.com/uofk__handasa/" target="_blank" rel="noopener noreferrer" style="margin:0 4px;">
+              <img src="https://raw.githubusercontent.com/Wesammoawia/html-email-images/main/email-images/black-instagram.png" 
+                  width="30" height="30" 
+                  alt="Instagram" 
+                  style="display:inline-block; border:0;">
+            </a>
+
+            <a href="https://www.linkedin.com/company/engineering-association-uofk/" target="_blank" rel="noopener noreferrer" style="margin:0 4px;">
+              <img src="https://raw.githubusercontent.com/Wesammoawia/html-email-images/main/email-images/black-linkedin.png" 
+                  width="30" height="30" 
+                  alt="LinkedIn" 
+                  style="display:inline-block; border:0;">
+            </a>
           </td>
         </tr>
         <tr>
           <td style="color: grey; font-size: 12px; text-align: center;">
-            <p>© 2026 Steering Enginnering Assocciation. All rights reserved.</p>
+            <p>© <span th:text="${#temporals.format(#temporals.createNow(), 'yyyy')}">2026</span> Steering Enginnering Assocciation. All rights reserved.</p>
           </td>
         </tr>
         
