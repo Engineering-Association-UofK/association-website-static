@@ -42,7 +42,17 @@
           <td style="height: 18px; line-height: 20px; font-size: 20px;"></td>
          </tr>
 
-                <tr>
+        <tr>
+          <td align="center" style="font-size:18px; font-weight:600; color:#1f2a36;">
+            Join us on {{Event Name}}
+          </td>
+         </tr>
+
+        <tr>
+          <td style="height: 18px; line-height: 20px; font-size: 20px;"></td>
+         </tr>
+
+        <tr>
           <td align="center" style="padding: 0 16px; width: 100%;">
             <table width="100%" style="max-width: 380px; border-collapse: collapse; border-spacing: 0;">
               <tr>
@@ -54,17 +64,18 @@
                   color: #2f3e4e;
                   font-weight: 500;
                 ">
-                  <p style="font-size:18px;; font-weight:bold; margin:0;">Reminder: [Event Name] is coming up soon!</p>
-                  <p style="font-weight:bold; font-size:16px; color:#FF4500;">Happening in 2 days! Mark your calendar.</p>
+                  {{Event Overview}}
                 </td>
               </tr>
             </table>
           </td>
         </tr>
 
-        <tr>
+
+         <tr>
           <td style="height: 18px; line-height: 20px; font-size: 20px;"></td>
-         </tr>
+        </tr>
+         
 
         <tr>
           <td align="center">
@@ -98,7 +109,7 @@
                     
                     <tr>
                       <td style="width:20%; vertical-align:middle; font-size:18px; padding-right:6px;">📅</td>
-                      <td style="width:80%; font-size:14px; color:#2f3e4e;">Date</td>
+                      <td style="width:80%; font-size:14px; color:#2f3e4e;">{{Date}}</td>
                     </tr>
                     <tr>
                       <td colspan="2" style="height:12px;"></td>
@@ -106,7 +117,7 @@
 
                     <tr>
                       <td style="width:20%; vertical-align:middle; font-size:18px; padding-right:6px;">🕒</td>
-                      <td style="width:80%; font-size:14px; color:#2f3e4e;">Time</td>
+                      <td style="width:80%; font-size:14px; color:#2f3e4e;">{{Time}}</td>
                     </tr>
                     <tr>
                       <td colspan="2" style="height:12px;"></td>
@@ -114,7 +125,7 @@
 
                     <tr>
                       <td style="width:20%; vertical-align:middle; font-size:18px; padding-right:6px;">📍</td>
-                      <td style="width:80%; font-size:14px; color:#2f3e4e;">Location</td>
+                      <td style="width:80%; font-size:14px; color:#2f3e4e;">{{Location}}</td>
                     </tr>
                     <tr>
                       <td colspan="2" style="height:12px;"></td>
@@ -122,7 +133,7 @@
 
                     <tr>
                       <td style="width:20%; vertical-align:middle; font-size:18px; padding-right:6px;">🔗</td>
-                      <td style="width:80%; font-size:14px; color:#2f3e4e;">Link</td>
+                      <td style="width:80%; font-size:14px; color:#2f3e4e;">{{Link}}</td>
                     </tr>
 
                   </table>
@@ -138,7 +149,24 @@
           <td style="height: 20px;"></td>
         </tr>
 
-
+        <tr>
+          <td align="center" style="padding: 0 16px; width: 100%;">
+            <table width="100%" style="max-width: 380px; border-collapse: collapse; border-spacing: 0;">
+              <tr>
+                <td style="
+                  text-align: center;
+                  font-size: 16px;
+                  line-height: 24px;
+                  font-family: sans-serif;
+                  color: #2f3e4e;
+                  font-weight: 500;
+                ">
+                 {{Additional details about the Event}} 
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
 
         <tr>
@@ -160,27 +188,14 @@
                 font-weight:600;
                 letter-spacing: 0.3px;
               ">
-              Confirm Attendance
+              View Event
             </a>
-          </td>
-        </tr>
-
-        <tr>
-          <td style="height: 12px; line-height: 20px; font-size: 20px;"></td>
-        </tr>
-
-        <tr>
-          <td align="center" style="padding: 0; font-size: 16px;">
-              <p style="width: 80%; line-height: 32px; font-weight: 500;">
-              Need help or have questions? Contact us at <a href="mailto:info@example.com">info@example</a>
-            </p>
           </td>
         </tr>
 
         <tr>
           <td style="height: 20px; line-height: 20px; font-size: 20px;"></td>
         </tr>
-
         <tr>
           <td style="height: 1; background-color: #dfdcdc;width: 100%; line-height: 1px; font-size: 1px;"></td>
         </tr>

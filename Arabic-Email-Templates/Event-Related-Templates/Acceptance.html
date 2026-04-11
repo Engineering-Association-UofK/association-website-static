@@ -2,7 +2,7 @@
 <html>
   <body style="margin: 0; ">
     <center style="background-color: #ffffff;;">
-      <table  style="width: 100%; color: #2f3e4e; max-width: 600px; border-spacing: 0; background-color: rgb(245, 247, 250);">
+      <table dir="rtl" style="width: 100%; color: #2f3e4e; font-family: Arial, Helvetica, sans-serif; max-width: 600px; border-spacing: 0; background-color: rgb(245, 247, 250);">
 
 
         <tr>
@@ -26,13 +26,12 @@
             <a href="https://association-website-frontend.vercel.app/"
               style="
                 text-decoration: none;
-                font-family: sans-serif;
                 font-size: 20px;
                 line-height: 24px;
                 color: rgba(2, 177, 220);
                 font-weight: bold;
               ">
-              Steering Engineering Association
+              الجمعية الهندسية التسييرية
             </a>
           </td>
         </tr>
@@ -50,12 +49,11 @@
                   text-align: center;
                   font-size: 16px;
                   line-height: 24px;
-                  font-family: sans-serif;
                   color: #2f3e4e;
                   font-weight: 500;
                 ">
-                  <p style="font-size:18px;; font-weight:bold; margin:0;">Congratuations! You havve been selected to attend</p>
-                  <p><strong>[Event Name]</strong></p>
+                  <p style="font-size:18px;; font-weight:bold; margin:0;">تهانينا! لقد تم اختيارك للحضور</p>
+                  <p><strong>{{Event Name}}</strong></p>
                 </td>
               </tr>
             </table>
@@ -74,12 +72,12 @@
                   text-align: center;
                   font-size: 16px;
                   line-height: 24px;
-                  font-family: sans-serif;
                   color: #2f3e4e;
                   font-weight: 500;
                 ">
-                Dear Applicant,<br><br>
-                We are delighted to congratulate you on being selected to attend <strong>[Event Name]</strong>.Your spot for the event has been successfully confirmed. 
+                <strong>{{Dear Applicant}},</strong><br><br>
+                  يسعدنا أن نهنئك على اختيارك لحضور<strong>{{اسم الفعالية}}</strong>
+                  تم تأكيد مقعدك في هذا الحدث بنجاح.
                 </td>
               </tr>
             </table>
@@ -114,7 +112,7 @@
                   color:#1f2a36;
                   border-bottom:1px solid #ddd;
                 ">
-                  Event Details
+                  تفاصيل الفعالية
                 </td>
               </tr>
 
@@ -124,7 +122,7 @@
                     
                     <tr>
                       <td style="width:20%; vertical-align:middle; font-size:18px; padding-right:6px;">📅</td>
-                      <td style="width:80%; font-size:14px; color:#2f3e4e;">Date</td>
+                      <td style="width:80%; font-size:14px; color:#2f3e4e;">{{التاريخ}}</td>
                     </tr>
                     <tr>
                       <td colspan="2" style="height:12px;"></td>
@@ -132,7 +130,7 @@
 
                     <tr>
                       <td style="width:20%; vertical-align:middle; font-size:18px; padding-right:6px;">🕒</td>
-                      <td style="width:80%; font-size:14px; color:#2f3e4e;">Time</td>
+                      <td style="width:80%; font-size:14px; color:#2f3e4e;">{{الوقت}}</td>
                     </tr>
                     <tr>
                       <td colspan="2" style="height:12px;"></td>
@@ -140,7 +138,7 @@
 
                     <tr>
                       <td style="width:20%; vertical-align:middle; font-size:18px; padding-right:6px;">📍</td>
-                      <td style="width:80%; font-size:14px; color:#2f3e4e;">Location</td>
+                      <td style="width:80%; font-size:14px; color:#2f3e4e;">{{الموقع}}</td>
                     </tr>
                     <tr>
                       <td colspan="2" style="height:12px;"></td>
@@ -148,7 +146,7 @@
 
                     <tr>
                       <td style="width:20%; vertical-align:middle; font-size:18px; padding-right:6px;">🔗</td>
-                      <td style="width:80%; font-size:14px; color:#2f3e4e;">Link</td>
+                      <td style="width:80%; font-size:14px; color:#2f3e4e;">{{الرابط}}</td>
                     </tr>
 
                   </table>
@@ -176,7 +174,7 @@
                   color: #2f3e4e;
                   font-weight: 500;
                 ">
-                 #Event Instructions#
+                 {{Event Instructions}}
                 </td>
               </tr>
             </table>
@@ -203,7 +201,7 @@
                 font-weight:600;
                 letter-spacing: 0.3px;
               ">
-              Add to Calendar 
+              إضافة إلى التقويم 
             </a>
           </td>
         </tr>
@@ -234,8 +232,12 @@
 
         
         <tr>
-          <td style="color: grey; font-size: 12px; text-align: center;">
-            <p>© 2026 Steering Enginnering Assocciation. All rights reserved.</p>
+          <td align="center" style="
+            font-size: 12px;
+            color: #888;
+            padding: 10px 20px 20px;
+          ">
+            © 2026 الجمعية الهندسية التسييرية. جميع الحقوق محفوظة
           </td>
         </tr>
         
