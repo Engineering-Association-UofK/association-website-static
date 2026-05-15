@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html>
   <body style="margin: 0;">
     <center style="background-color: #ffffff;">
-      <table dir="rtl" style="width: 100%; font-family: Arial, Helvetica, sans-serif; max-width: 600px; border-spacing: 0; background-color: rgb(245, 247, 250);">
+      <table style="width: 100%; max-width: 600px; border-spacing: 0; background-color: rgb(245, 247, 250);">
 
 
         <tr>
@@ -27,13 +26,13 @@
             <a href="https://association-website-frontend.vercel.app/"
               style="
                 text-decoration: none;
-                font-family: Arial;
+                font-family: sans-serif;
                 font-size: 20px;
                 line-height: 24px;
                 color: rgba(2, 177, 220);
                 font-weight: bold;
               ">
-              الجمعية الهندسية التسييرية
+              Steering Engineering Association
             </a>
           </td>
         </tr>
@@ -68,7 +67,7 @@
               font-family: sans-serif;
               padding: 0;
             ">
-              تم تعليق الحساب
+              Confirm Your Email
             </p>
           </td>
         </tr>
@@ -94,7 +93,7 @@
           <td style="height: 18px;"></td>
         </tr>
 
-  
+
         <tr>
           <td align="center" style="padding: 0 16px; width: 100%;">
             <table width="100%" style="max-width: 380px; border-collapse: collapse; border-spacing: 0;">
@@ -108,11 +107,7 @@
                   font-weight: 500;
                   
                 ">
-                 مرحبًا<strong>{{اسم المستخدم}}،</strong><br><br>
-                 لقد لاحظنا نشاطًا غير معتاد على حسابك، لذلك قمنا بتعليقه ووضعه ضمن قائمة الحذف.<br><br>
-                 <span style="color: rgba(67, 93, 120); font-weight: 600; font-size:16px; line-height:24px; font-family: sans-serif;">
-                    هل تعتقد أن هذا تم عن طريق الخطأ؟
-                  </span>
+                  We are excited to have you join the Engineering Association Community! This is the code sent to your email
                 </td>
               </tr>
                   
@@ -139,14 +134,40 @@
                 padding: 14px 28px;
                 font-weight:600;
               ">
-              تواصل مع الدعم
+              Code: {{ .Input }}
             </a>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="height: 18px;"></td>
+        </tr>
+
+        <tr>
+          <td align="center" style="padding: 0 16px; width: 100%;">
+            <table width="100%" style="max-width: 380px; border-collapse: collapse; border-spacing: 0;">
+              <tr>
+                <td style="
+                  text-align: center;
+                  font-size: 16px;
+                  line-height: 24px;
+                  font-family: sans-serif;
+                  color: rgba(67, 93, 120);
+                  font-weight: 500;
+                  
+                ">
+                  Use this code in your next login to confirm your email address and complete registration.<span style="font-weight: bold; color: red;">This code will expire in one hour!</span>
+                </td>
+              </tr>
+                  
+            </table>
           </td>
         </tr>
 
         <tr>
           <td style="height: 24px;"></td>
         </tr>
+
 
 
         <tr>
@@ -175,10 +196,10 @@
           <td align="center" style="
             font-size: 12px;
             color: #888;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: sans-serif;
             padding: 10px 20px 20px;
-            ">
-            © 2026 الجمعية الهندسية التسييرية. جميع الحقوق محفوظة
+          ">
+            © {{ .Year }} Steering Engineering Association. All rights reserved.
           </td>
         </tr>
 
