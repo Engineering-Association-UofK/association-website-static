@@ -55,8 +55,8 @@
       .content {
         position: absolute;
         top: 0mm;
-        left: 8mm;
-        right: 8mm;
+        left: 30mm;
+        right: 30mm;
         bottom: 15mm;
         background-color: #fff9;
         text-align: center;
@@ -393,23 +393,6 @@ margin-bottom: 1mm;
             completing all required tasks and their active participation in
             acquiring essential programming and engineering skills.
           </p>
-
-          {{ if .TaskColumns }}
-          <div class="covered-tasks">
-            <h4 class="covered-tasks-title text">
-              The covered tasks in the workshop:
-            </h4>
-            <div class="covered-tasks-lists">
-              {{ range .TaskColumns }}
-              <ul class="list">
-                {{ range . }}
-                <li>{{ . }}</li>
-                {{ end }}
-              </ul>
-              {{ end }}
-            </div>
-          </div>
-          {{ end }}
 
           <p class="text approval-text">
             This certificate was officially approved by the General Secretariat

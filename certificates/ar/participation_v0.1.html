@@ -68,8 +68,8 @@ left: 0;
       .content {
         position: absolute;
         top: 0mm;
-        left: 8mm;
-        right: 8mm;
+        left: 30mm;
+        right: 30mm;
         bottom: 15mm;
         background-color: #fff9;
         text-align: center;
@@ -398,23 +398,6 @@ margin-bottom: 1mm;
             تم منح هذه الشهادة تقديرًا لالتزامه/التزامها بإتمام جميع المهام المطلوبة،
             ومشاركته/مشاركتها الفعالة في اكتساب المهارات البرمجية والهندسية الأساسية.
           </p>
-
-          {{ if .TaskColumns }}
-          <div class="covered-tasks">
-            <h4 class="covered-tasks-title text">
-              المواضيع التي تم تغطيتها في الورشة:
-            </h4>
-            <div class="covered-tasks-lists">
-              {{ range .TaskColumns }}
-              <ul class="list">
-                {{ range . }}
-                <li>{{ . }}</li>
-                {{ end }}
-              </ul>
-              {{ end }}
-            </div>
-          </div>
-          {{ end }}
 
           <p class="text approval-text">
             تم اعتماد هذه الشهادة بواسطة الأمانة العامة للجمعية الهندسية التسييرية
