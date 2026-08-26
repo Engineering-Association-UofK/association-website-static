@@ -68,7 +68,7 @@
               font-family: sans-serif;
               padding: 0;
             ">
-              Verify Your Email
+              Continue Registration
             </p>
           </td>
         </tr>
@@ -109,7 +109,7 @@
                   
                 ">
                   
-                  We are excited to have you join the Engineering Association Community! Please click the button below to verify your email address
+                  We are excited to have you join the Engineering Association Community! Please click the button below to continue the registration process.
                 </td>
               </tr> 
             </table>
@@ -135,7 +135,7 @@
                 padding: 14px 28px;
                 font-weight:600;
               ">
-              Verify My Email
+              Continue Registration
             </a>
           </td>
         </tr>
@@ -157,7 +157,7 @@
                   font-weight: 500;
                 ">
                   If the button does not work, copy and paste the following link into your browser:<br> 
-                  <a href="{{verificationLink}}">{{verification link}}</a>
+                  <a href="{{ .link }}">{{ .Link }}</a>
                 </td>
               </tr> 
             </table>
@@ -197,7 +197,7 @@
             font-family: sans-serif;
             padding: 10px 20px 20px;
           ">
-            © 2026 Steering Engineering Association. All rights reserved.
+            © {{ .Year }} Steering Engineering Association. All rights reserved.
           </td>
         </tr>
 
